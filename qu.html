@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Quiz</title>
+    <link rel="stylesheet" href="qu.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Frontend Developer Quiz</h1>
+            <p>Test your knowledge of HTML, CSS, and JavaScript</p>
+        </header>
+        
+        <div class="quiz-container">
+            <!-- Welcome Screen -->
+            <div class="screen welcome-screen active">
+                <h2>Welcome to the Frontend Quiz!</h2>
+                <p>This quiz will test your knowledge of HTML, CSS, and JavaScript - the core technologies of frontend development.</p>
+                <p>You'll have 10 questions to answer. Try to get the highest score possible!</p>
+                <button class="btn start-btn">Start Quiz</button>
+            </div>
+            
+            <!-- Quiz Screen -->
+            <div class="screen quiz-screen">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="question-count">Question <span class="current-question">1</span> of 10</div>
+                <div class="question-text">What does HTML stand for?</div>
+                <div class="options-container">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+                <div class="navigation">
+                    <button class="btn prev-btn hidden">Previous</button>
+                    <button class="btn next-btn">Next Question</button>
+                </div>
+            </div>
+            
+            <!-- Results Screen -->
+            <div class="screen results-screen">
+                <h2>Quiz Completed!</h2>
+                <div class="score-container">
+                    <div class="score">0%</div>
+                    <div class="score-text">Your Score</div>
+                </div>
+                <div class="feedback">
+                    <p>You answered <span class="correct-answers">0</span> out of 10 questions correctly.</p>
+                    <p class="performance-message">Keep practicing to improve your frontend skills!</p>
+                </div>
+                <button class="btn restart-btn">Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="qu.js"></script>
+</body>
+</html>
